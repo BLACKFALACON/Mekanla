@@ -1,0 +1,184 @@
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>KDV HESAPLAMA</h2>
+
+<form id="frm" >
+ tall<input type="radio" name="by" id="tall" value="10" onclick="CreateKhvBy(); Soyle()" >
+ grande<input type="radio" name="by" id="grande"  value="12" onclick="CreateKhvBy(); Soyle()" >
+ venti<input type="radio" name="by" id="venti"  value="14" onclick="CreateKhvBy(); Soyle()" >
+ <br><hr>
+  Sade<input type="radio" name="sut" id="radio1"  onclick="CreateMilk(); Soyle()">
+  Sütlü<input type="radio" name="sut" id="radio2"  onclick="CreateMilk();  Soyle()" >
+ <br><hr>
+ Fındık<input type="checkbox" name="srp" id="srp1"  onclick="CreateSrp1(); Soyle()" >
+ Karamel<input type="checkbox" name="srp" id="srp2"  onclick="CreateSrp2();  Soyle()" >
+ Vanilya<input type="checkbox" name="srp" id="srp3"  onclick="CreateSrp3(); Soyle()" >
+ Fındık (Şekersiz)<input  type="checkbox" name="srp" id="srp4"  onclick="CreateSrp4();  Soyle()" >
+ Karamel (Şekersiz)<input type="checkbox" name="srp" id="srp5"  onclick="CreateSrp5(); Soyle()";>
+ Vanilya (Şekersiz)<input type="checkbox" name="srp" id="srp6"  onclick="CreateSrp6(); Soyle()" >
+
+</form> 
+  
+<button id="btn1" onclick="Temizle()">Temizle</button>
+
+
+<p id="demo"></p>
+<p id="tplmfyt"></p>
+<script
+> var tplm=0;
+ var srp=0;
+ var text,text3="",text1="";
+ document.getElementById("btn1").disabled = true;
+
+ function Temizle()
+  {
+   document.getElementById("frm").reset();
+   document.getElementById("tplmfyt").innerHTML ="";
+   document.getElementById("demo").innerHTML="";
+  } 
+
+ 
+  function CreateKhvBy()
+  {  
+    var secenekler=document.getElementsByName("by");
+    for(j=0; j < secenekler.length; j++)
+    {
+     var s= secenekler[j].value ;   
+     if(secenekler[j].checked)
+     {      
+      tplm=s+tplm;
+     }
+     else
+      {
+      tplm=s+tplm;
+      }   
+    } 
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ function CreateSrp1()
+ { 
+  if(document.getElementById("srp1").checked == true)  /*  Fındık   */
+  { 
+	 srp=srp+2.75;
+	 text3=" Fındık ";
+  } 
+
+   if(document.getElementById("srp1").checked == false)
+	{ 
+	srp=srp-2.75;
+	text3=" ";
+	} 
+ }
+
+  function CreateSrp2()
+ { 
+	if(document.getElementById("srp2").checked == true)  /*  Karamel   */
+  { 
+	srp=srp+2.75;
+	text3=" Karamel ";
+  } 
+  if(document.getElementById("srp2").checked == false)
+	{ 
+	srp=srp-2.75;
+	text3=" ";
+	} 
+
+  }
+  function CreateSrp3()
+  { 	
+   if(document.getElementById("srp3").checked == true)    /*  Vanilya   */
+    { 
+	   srp=srp+2.75;
+	   text3=" Vanilya ";
+    } 
+    if(document.getElementById("srp3").checked == false)
+	  { 
+	   srp=srp-2.75;
+	   text3="  ";
+	  } 
+  }
+
+  function CreateSrp4()
+  { 	
+   if(document.getElementById("srp4").checked == true) /*  Fındık Ş   */
+    { 
+  	 srp=srp+2.75;
+  	 text3=" Fındık(Şekersiz)";
+    } 
+   if(document.getElementById("srp4").checked == false)
+	  { 
+	   srp=srp-2.75;
+	   text3="  ";
+	  } 
+  }
+
+ function CreateSrp5()
+  { 
+   if(document.getElementById("srp5").checked == true) /*  Karamel Ş  */
+    { 
+	    srp=srp+2.75;
+	   text3=" Karamel(Şekersiz) ";
+    } 
+   if(document.getElementById("srp5").checked == false)
+	 { 
+	   srp=srp-2.75;
+	   text3="  ";	
+    } 
+  }
+
+ function CreateSrp6()
+ { 
+   if(document.getElementById("srp6").checked == true)  /*  Vanilya Ş  */
+    { 
+	   tplm=tplm+2.75;
+	   text3=" Vanilya(Şekersiz)";
+    } 
+
+    if(document.getElementById("srp6").checked == false)
+	  { 
+	   srp=srp-2.75;
+	   text3="  ";
+	  } 
+  }
+
+  
+ function CreateMilk()
+  { 
+   	if(document.getElementById("radio1").checked == true)
+  	{ 
+  	text1="sade";
+  	} 
+    if(document.getElementById("radio2").checked == true)
+    { 
+  	 text1="sütlü"; 
+  	}          
+  }
+
+  function Soyle()
+  { 
+  document.getElementById("tplmfyt").innerHTML ="Toplam Tutar :" + (tplm+srp) +"TL";
+  document.getElementById("demo").innerHTML="Bir tane "+text+" boy"+text3+" şuruplu "+text1;
+  }
+</script>
+
+</body>
+</html>

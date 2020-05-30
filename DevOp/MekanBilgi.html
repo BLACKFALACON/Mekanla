@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+
+<style>
+
+.collapsible {
+  background-color: #feac00;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  margin: 10px;
+  width: 100%;
+  height: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 20px;
+}
+
+.activee, .collapsible:hover {
+  background-color: #feac00;
+}
+
+.collapsible:after {
+  content: '\002B';
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.activee:after {
+  content: "\2212";
+}
+
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+ 
+}
+</style>
+</head>
+<body>
+
+
+<button class="collapsible display-4">Starbucks Bebek</button>
+<div class="content">
+<div class="row">
+ <div class="col-sm-4">
+ <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24084.128172599827!2d28.876044359723416!3d41.013965175195395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cabb081d9317d1%3A0xba800c81534b7bfc!2sHakan+Tekstil!5e0!3m2!1str!2str!4v1545233030472" frameborder="0" style="width:90%;"></iframe>
+  <br>
+  <button type="button" class="btn btn-outline-warning">Yol Tarifi</button>
+ </div>
+ <div class="col-sm-2">
+  <b>Adres</b>
+  <p>Bebek Mahallesi, Cevdetpaşa Caddesi, No 30/A, Beşiktaş, İstanbul</p>
+  <b>Telefon</b>
+  <p>0212 2874363</p>
+ </div>
+
+  <div class="col-sm-2">
+  
+  <b>Çalışma Saatleri</b>
+  <br>07:00 - 01:00 <i id="drm" style="font-size: 12px; cursor: pointer;"></i> 
+  <br><a href="#" data-toggle="tooltip"   style="font-size:15px; text-decoration: none;" class="text-danger">Daha Fazla</a>
+ </div>
+
+ <div class="col-sm-2">
+  <b style="font-size: 15px;">Daha fazla bilgi</b>
+  <p><i class="fas fa-check" style="color: green; font-size: 15px;"></i> Kahvaltı <br>
+  <i class="fas fa-times" style="color: red; font-size: 15px;"></i> Alkol Bulunmaz  <br>
+  <i class="fas fa-check" style="color: green; font-size: 15px;"></i> Boğaz Manzarası <br>
+  <i class="fas fa-check" style="color: green; font-size: 15px;"> </i> Wifi<br>
+  <i class="fas fa-check" style="color: green; font-size: 15px;"> </i> Dış Mekan<br>
+  <i class="fas fa-check" style="color: green; font-size: 15px;"> </i> İç Mekan<br></p>
+ </div>
+
+  <div class="col-sm-2">
+  <p>  <i class="fas fa-check" style="color: green; font-size: 15px;"> </i> Self Servis <br>
+  <i class="fas fa-check" style="color: green; font-size: 15px;"> </i> Sigara İçme Alanı<br>
+  <i class="fas fa-check" style="color: green; font-size: 15px;"> </i> Deniz Kenarı<br>
+  <i class="fas fa-check" style="color: green;  font-size: 15px;"> </i> Çocuklar için Uygun<br></p>
+ </div>
+
+ </div>
+</div>
+
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+var time=new Date().getHours();
+var durum;
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
+
+if (time >7 &&  time <24)
+{
+ durum = "Şuan Açık";
+ document.getElementById('drm').style.color='green';
+}
+else
+{
+ durum = "Şuan Kapalı ";
+ document.getElementById('drm').style.color='red'
+}
+ document.getElementById("drm").innerHTML =durum;
+
+$(document).ready(function(){
+$('.text-danger').tooltip({title:"Pts  07:00 - 01:00 <br> Sa  07:00 - 01:00 <br> Çrş 07:00 - 01:00 <br> Prş 07:00 - 01:00 <br> Cum 07:00 - 01:00 <br>Cts 07:00 - 01:00 <br> Paz 07:00 -01:00", html: true, placement: "bottom"}); 
+});
+
+
+</script>
+
+</body>

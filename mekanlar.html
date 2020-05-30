@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+ <title>Mekanlar</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8" />
+        <script type="text/javascript" src="C:\Users\sahan\Desktop\Proje505\js\script.js"> </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+    <link href="css/font-awesome.css" rel="stylesheet">
+
+</head>
+
+<body onload="filterSelection('all')">
+    <div id="home" class="inner-w3pvt-page">
+        <div class="overlay-innerpage">
+            <div class="top_w3pvt_main container">
+                <header class="nav_w3pvt text-center ">
+                <nav class="wthree-w3ls">
+                    <div id="logo">
+                        <h1> <a class="navbar-brand px-0 mx-0" href="index.html"><span class="fa fa-send text-warning"></span> Mekanla</a></h1>
+                    </div>
+                    <label for="drop" class="toggle"><span class="fa fa-bars"></span></label>
+                    <input type="checkbox" id="drop" />
+
+                    <ul class="menu mr-auto">
+                        <li ><a href="index.html">Anasayfa</a></li>
+                        <li class="active"><a href="mekanlar.html">Mekanlar</a></li>
+                         <li><a href="mblog.html">M Blog</a></li>                          
+                        <li><a href="contact.html">İLETİŞİM</a></li>
+                        <li class="social-icons ml-lg-3">
+
+                        <a href="#" class="p-0 social-icon"><span class="fa fa-facebook-official" aria-hidden="true"></span>
+                        <div class="tooltip">Facebook</div></a> </li>
+
+                        <li class="social-icons">
+                        <a href="#" class="p-0 social-icon"><span class="fa fa-twitter" aria-hidden="true"></span>
+                        <div class="tooltip">Twitter</div></a> </li>
+
+                        <li class="social-icons"><a href="#" class="p-0 social-icon"><span class="fa fa-instagram" aria-hidden="true"></span>
+                         <div class="tooltip">Instagram</div></a> </li>
+                    </ul>
+                </nav>
+            </header>
+                <!--/breadcrumb-->
+                <div class="inner-w3pvt-page-info">
+                    <ol class="breadcrumb d-flex">
+                        <li class="breadcrumb-item">
+                            <a href="index.html">Anasayfa</a>
+                        </li>
+                        <li class="breadcrumb-item active">Mekanlar</li>
+                    </ol>
+                </div>
+                <!--//breadcrumb-->
+            </div>
+        </div>
+    </div>
+
+
+   <h3 class="display-4 ortala" >Mekanlar</p></h3>
+<div class="container102"><br>
+<ul class="nav nav-pills justify-content-center " role="tablist">
+
+    <li class="nav-item">
+      <a class="nav-link active" data-toggle="pill"  onclick="filterSelection('all')"> Tümü</a>   
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="pill"  onclick="filterSelection('icecek')">İçecek</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="pill" onclick="filterSelection('eglence')">Eğlence</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="pill" onclick="filterSelection('fruits')">Eğlence</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="pill" onclick="filterSelection('colors')">Eğlence</a>
+   </li>
+   <li class="nav-item">
+      <input type="text1" placeholder="Ara.." id="myInput" onkeyup="filterFunction()">
+    </li>  
+  </ul>
+
+<div class="container" >
+<div id="myDropdown" >
+ <a href="mkn1.html" class="mini"><div class="filterDiv icecek shadow "><img src="images\sb1.png"style="width:35%; margin-left:-15px"><b  id="verticle">Starbucks</b></div></a>
+ 
+ <a href="mkn1.html"class="mini"  > <div class="filterDiv icecek shadow"><img  src="images\khvdnys.png" style="width:35%; margin-left:-15px"><b id="verticle">Kahve Dünyası</b></div></a>
+ 
+ <a href="mkn1.html"class="mini"  > <div class="filterDiv icecek shadow"><img src="images\crb.png" style="width:40%; margin-left:-15px"><b  id="verticle">Caribou Coffee</b></div></a>
+ <a href="mkn1.html"class="mini"  > <div class="filterDiv icecek  shadow"><img src="images\glrjns.png" style="width:40%;margin-left:-15px"><b  id="verticle">Gloria Jean's</b></div></a>
+  <a href="mkn1.html"class="mini"  > <div class="filterDiv icecek  shadow"><img src="images\esprs.png" style="width:50%;margin-left:-15px"><b  id="verticle">Espressolab</b></div></a>
+ <a href="mkn1.html"class="mini"  > <div class="filterDiv icecek shadow"><img src="images\tchb.png" style="width:35%; margin-left:-15px"><b  id="verticle">Tchibo</b></div></a>
+ <a href="mkn1.html"class="mini"  > <div class="filterDiv icecek shadow"><img src="images\cfnr.png" style="width:45%;margin-left:-15px"><b  id="verticle">Caffe Nero</b></div></a>
+<a href="mkn1.html"class="mini"  ><div class="filterDiv icecek shadow"><img src="images\rbrts.png" style="width:35%;margin-left:-15px"><b  id="verticle">Robert's Caffe</b></div></a>
+<a href="mkn1.html"class="mini"  ><div class="filterDiv icecek shadow"><img src="images\hpymns.png" style="width:35%;margin-left:-15px"><b  id="verticle">Happy Moon's</b></div></a>
+<a href="mkn1.html"class="mini"  ><div class="filterDiv icecek shadow"><img src="images\mado.png" style="width:45%;margin-left:-15px"><b  id="verticle">Mado</b></div></a>
+<a href="mkn1.html"class="mini"  ><div class="filterDiv icecek shadow"><img src="images\lkmta.png" style="width:35%;margin-left:-15px"><b  id="verticle">Lokmata</b></div></a>
+<a href="mkn1.html"class="mini"  ><div class="filterDiv icecek shadow"><img src="images\midp.png" style="width:45%;margin-left:-15px"><b  id="verticle">Midpoint</b></div></a>
+<a href="mkn1.html"class="mini"  ><div class="filterDiv icecek shadow"><img src="images\ckshp.jpg" style="width:50%;margin-left:-15px"><b  id="verticle">Cook Shop</b></div></a>
+<a href="mkn1.html"class="mini"  ><div class="filterDiv icecek shadow"><img src="images\bgcf.png" style="width:50%;margin-left:-15px"><b  id="verticle">Big Chefs</b></div></a>
+<a href="mkn1.html"class="mini"  ><div class="filterDiv icecek shadow"><img src="images\ozst.jpg" style="width:40%;margin-left:-15px"><b  id="verticle">Özsüt</b></div></a>
+<a href="mkn1.html"class="mini"  ><div class="filterDiv icecek shadow"><img src="images\srymhlb.png" style="width:35%;"><b  id="verticle">Saray Muhallebicisi</b></div></a>
+<a href="mkn1.html"class="mini"  ><div class="filterDiv icecek shadow"><img src="images\sts.jpg" style="width:50%;margin-left:-15px"><b  id="verticle">Sütiş</b></div></a>
+<a href="mkn1.html"class="mini"  ><div class="filterDiv icecek shadow"><img src="images\mgnm.png" style="width:40%;margin-left:-15px"><b  id="verticle">Magnum Store</b></div></a>
+
+ <a href="mkn1.html" class="mini" > <div class="filterDiv  eglence shadow"><img src="images\isfnbl.png" style="width:35%;margin-left:-15px"><b  id="verticle">İsfanbul</b></div></a>
+ <a href="mkn1.html" class="mini" > <div class="filterDiv eglence shadow"><img src="images\sealife.png" style="width:35%;margin-left:-15px"><b  id="verticle"> Sea Life </b></div></a>
+ <a href="mkn1.html" class="mini" > <div class="filterDiv eglence shadow"><img src="images\istak.png" style="width:35%;margin-left:-15px font-size:14px;"><b  id="verticle">İstanbul Akvaryum</b></div></a>
+ <a href="mkn1.html" class="mini" > <div class="filterDiv eglence shadow"><img src="images\lego.png" style="width:35%;margin-left:-15px"><b  id="verticle">Lego Land</b></div></a>
+ <a href="mkn1.html"class="mini" > <div class="filterDiv eglence shadow"><img src="images\mdtst.png" style="width:35%;margin-left:-15px"><b  id="verticle">Madam Tussaude</b></div></a>
+</div>
+</div>
+
+ <br><br><br>
+ </div>
+ <br><br><br>
+<script>
+filterSelection("all")
+
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("filterDiv");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+function filterFunction() {
+  var input, filter, ul, li, a, i;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  div = document.getElementById("myDropdown");
+  a = div.getElementsByTagName("a");
+  for (i = 0; i < a.length; i++) {
+    txtValue = a[i].textContent || a[i].innerText;
+    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+      a[i].style.display = "";
+    } else {
+      a[i].style.display = "none";
+    }
+  }
+}
+</script>
+   <footer class="py-lg-4 py-4">
+
+        <div class="container py-sm-1">
+
+            <div class="row footer-grids">
+
+                <div class="col-lg-4 mt-1">
+                    <h4 class="mb-1">Hızlı Link</h4>
+                    <div class="links-wthree d-flex">                     
+                        <ul class="list-info-wthree ml-2">
+                            <li> <a href="index.html"><span class="fa fa-angle-double-right" aria-hidden="true"></span>
+                            Anasayfa </a> </li>
+                            <li><a href="about.html"><span class="fa fa-angle-double-right" aria-hidden="true"></span>
+                             Mekanlar </a> </li>
+                            <li><a href="contact.html"><span class="fa fa-angle-double-right" aria-hidden="true"></span>
+                            İletişim </a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 mt-4 ad-info">
+                  <h3> <a class="navbar-brand px-0 mx-0 mb-4" href="index.html">Sosyal Medya </a> </h3>          
+                     <div class="icon-social  mt-4b">
+                        <a href="#" class="button-footr social-icon-color">
+                            <span class="fa mx-2 fa-facebook "></span>
+                        </a>
+                        <a href="#" class="button-footr social-icon-color">
+                            <span class="fa mx-2 fa-twitter"></span>
+                        </a>
+                        <a href="#" class="button-footr social-icon-color">
+                            <span class="fa mx-2 fa-instagram"></span>
+                        </a>           
+                    </div>
+               </div>
+
+                     <div class="col-lg-4 mt-3">
+                    <h2> <a class="navbar-brand px-0 mx-0 mb-4" href="index.html">Mekanla </a> </h2>
+                    <p class="mb-3">Merak etiğiniz mekanlar hakkında fiyat ve bilgiye ulaşmanın en kolay yolu. </p>
+                
+                </div>
+
+        </div>
+    </footer>
+
+    <div class="copy_right p-1 d-flex">
+        <div class="container">
+            <div class="row d-flex">
+                <div class="col-lg-9 copy_w3pvt">
+                    <p class="text-lg-left text-center">© 2019 Mekanla. Tüm hakları saklıdır </p>
+                       
+                </div>
+
+                <div class="col-lg-3 move-top text-lg-right text-center">
+                    <a href="#home" class="move-top ">
+                        <span class="fa fa-angle-double-up mt-1   pr-2 pt-1 bg-warning rounded-circle " style="font-size: 30px;"  aria-hidden="true"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

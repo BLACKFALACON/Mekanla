@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <script type="text/javascript" src="script1.js"> </script>
+    </head>
+<body>
+
+<h2>KDV HESAPLAMA</h2>
+
+<form id="frm" >
+ tall<input type="radio" name="by" id="tall"  onclick="CreateKhvBy(); Soyle()" >
+ grande<input type="radio" name="by" id="grande"  onclick="CreateKhvBy(); Soyle()" >
+ venti<input type="radio" name="by" id="venti"  onclick="CreateKhvBy(); Soyle()" >
+ <br><hr>
+  Sade<input type="radio" name="sut" id="radio1"  onclick="CreateMilk(); Soyle()">
+  Sütlü<input type="radio" name="sut" id="radio2"  onclick="CreateMilk();  Soyle()" >
+ <br><hr>
+ Fındık<input type="checkbox" name="srp" id="srp1"  onclick="CreateSrp1(); Soyle()" >
+ Karamel<input type="checkbox" name="srp" id="srp2"  onclick="CreateSrp2();  Soyle()" >
+ Vanilya<input type="checkbox" name="srp" id="srp3"  onclick="CreateSrp3(); Soyle()" >
+ Fındık (Şekersiz)<input  type="checkbox" name="srp" id="srp4"  onclick="CreateSrp4();  Soyle()" >
+ Karamel (Şekersiz)<input type="checkbox" name="srp" id="srp5"  onclick="CreateSrp5(); Soyle()";>
+ Vanilya (Şekersiz)<input type="checkbox" name="srp" id="srp6"  onclick="CreateSrp6(); Soyle()" >
+
+</form> 
+  
+<button id="btn1" onclick="Temizle()">Temizle</button>
+
+<p id="demo"></p>
+<p id="tplmfyt"></p>
+
+</body>
+</html>

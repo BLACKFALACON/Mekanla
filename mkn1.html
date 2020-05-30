@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html >
+<head>
+ <title>Mekanlar</title>
+  <meta charset="UTF-8" />
+  <script type="text/javascript" src="js/script.js"> </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+  <link href="css/font-awesome.css" rel="stylesheet">  
+
+ </head>
+
+<body onload="filterSelection('all')">
+    <div id="home" class="inner-w3pvt-page">
+        <div class="overlay-innerpage">
+            <div class="top_w3pvt_main container">
+                <header class="nav_w3pvt text-center ">
+                <nav class="wthree-w3ls">
+                    <div id="logo">
+                     <h1> <a class="navbar-brand px-0 mx-0" href="index.html"><span class="fa fa-send text-warning"></span> MekΛnla</a></h1>
+                    </div>
+                    <label for="drop" class="toggle"><span class="fa fa-bars"></span></label>
+                    <input type="checkbox" id="drop" />
+                    <ul class="menu mr-auto">
+                        <li ><a href="index.html">Anasayfa</a></li>
+                        <li ><a href="mekanlar.html">Mekanlar</a></li> 
+                         <li><a href="kendinyap.html">Kendin yap</a></li>                             
+                        <li><a href="contact.html">İLETİŞİM</a></li>
+                        <li class="social-icons ml-lg-3">
+
+                        <a href="#" class="p-0 social-icon"><span class="fa fa-facebook-official" aria-hidden="true"></span>
+                        <div class="tooltip">Facebook</div></a> </li>
+
+                        <li class="social-icons">
+                        <a href="#" class="p-0 social-icon"><span class="fa fa-twitter" aria-hidden="true"></span>
+                        <div class="tooltip">Twitter</div></a> </li>
+
+                        <li class="social-icons"><a href="#" class="p-0 social-icon"><span class="fa fa-instagram" aria-hidden="true"></span>
+                         <div class="tooltip">Instagram</div></a> </li>
+                    </ul>
+                </nav>
+            </header>
+                <!--/breadcrumb-->
+                <div class="inner-w3pvt-page-info">
+                    <ol class="breadcrumb d-flex">
+                        <li class="breadcrumb-item">
+                            <a href="index.html">Anasayfa</a>
+                        </li>
+                         <li class="breadcrumb-item">
+                            <a href="mekanlar.html">Mekanlar</a>
+                        </li>
+                        <li class="breadcrumb-item active">Starbucks</li>
+                    </ol>
+                </div>
+                <!--//breadcrumb-->
+            </div>
+        </div>
+    </div>
+<br><br>
+<div class="container">
+<div style="width:100%; ">
+<div class="row ">
+  <div class="col-sm-2"></div>
+  <div class="col-sm-2"><img class="card-img-top" src="images/sb1.png" style="width:60%;"></div>
+  <div class="col-sm-2"><h1 class="display-3 ">Starbucks</h1></div>
+  <div class="col-sm-6"></div>
+</div>
+
+<div class="btn-group ">
+  <button id="defaultOpen" class="tablinks " onclick="openCity(event, 'menu')" >Menü</button>
+  <button class="tablinks " onclick="openCity(event, 'kendinyap')">Kendin yap</button>
+  <button class="tablinks" onclick="openCity(event, 'foto')">Galeri</button>
+  <button class="tablinks " onclick="openCity(event, 'sube')">Şubeler</button>
+</div>
+
+<div id="menu" class="tabcontent container "> <!-- MENÜ1 BAŞLANGıç-->
+ <h6 class="display-4 mb-3 ml-3">Menü</h6>
+ <br>
+  <ul class="nav nav-pills ml-4 justify-content-center altt" role="tablist">
+    <li class="nav-item">
+      <a class="nav-link active " data-toggle="pill" href="#menu1">Sıcak İçecekler</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="pill" href="#menu2">Soğuk İçecekler</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="pill" href="#menu3">Pastane</a>
+    </li>
+     <li class="nav-item">
+      <a class="nav-link" data-toggle="pill" href="#menu3">Extralar</a>
+    </li>
+  </ul>
+
+
+  <div class="tab-content" >
+
+   <div id="menu1" class="container101 tab-pane active"><br> <!-- MENÜ 1-->
+    <div class="row">
+    <div class="card bg-warning text-white uruncerceve" >
+      <img class="card-img-top" src="images/gzlk.jpg" style="width:100%">
+      <div class="card-body">
+       <h6 class="card-text">GLASS</h6>
+       <hr>
+        <i class="fas fa-glass-whiskey" style='font-size:10px; color:white;'> 10 TL</i>
+       <i class="fas fa-glass-whiskey" style='font-size:12px; color:white;'> 10 TL</i>
+        <i class="fas fa-glass-whiskey"  style='font-size:14px;color:white;'> 10 TL</i>
+      </div>  
+    </div>  
+
+    <div class="card  img-fluid bg-primary uruncerceve ">
+     <img class="card-img-top" src="images/gzlk.jpg" style="width:100%; height:100%;">
+     <div class="card-img-overlay">
+      <h6 class="text-light">GLASS</h6>
+        <p class="text-light">$500.00 </p>
+     </div>
+    </div>
+
+   <div class="card  img-fluid bg-primary uruncerceve ">
+     <img class="card-img-top" src="images/gzlk.jpg" style="width:100%; height:100%;">
+     <div class="card-img-overlay" style="margin-top: 60%;  ">
+      <h6 class="card-title text-light">GLASS</h6>
+        <i class='fas fa-coffee'style='font-size:10px; color:white;'> 10 TL</i>
+        <i class='fas fa-coffee' style='font-size:12px; color:white;'> 10 TL</i>
+        <i class='fas fa-coffee' style='font-size:14px;color:white;'> 10 TL</i>
+     </div>
+    </div>
+    <div class="card uruncerceve " >
+     <div class="card-body">
+      <h6 class="card-title">GLASS</h6>
+       <i class='fas fa-coffee'style='font-size:10px;'> 10 Tl</i>
+        <i class='fas fa-coffee' style='font-size:12px;'> 10 Tl</i>
+        <i class='fas fa-coffee' style='font-size:14px;'> 10 TL</i>
+     </div>
+      <img class="card-img-top" src="images/gzlk.jpg" style="width:100%;">
+    </div>
+
+    <div class="card uruncerceve">
+      <img class="card-img-top" src="images/gzlk.jpg" style="width:100%">
+      <div class="card-body">
+       <h5 class="card-title">GLASS</h5>  
+       <hr>    
+         <i class='fas fa-coffee'style='font-size:10px;'> 10 Tl</i>
+         <i class='fas fa-coffee' style='font-size:12px;'> 10 Tl</i>
+         <i class='fas fa-coffee' style='font-size:14px;'> 10 TL</i>
+      </div>  
+    </div>  
+
+    <div class="card uruncerceve" >
+      <img class="card-img-top" src="images/gzlk.jpg" style="width:100%; height: 60%;">
+      <div class="card-body" >
+       <h5 class="card-title">GLASS</h5>
+        <i class="fas fa-cookie-bite" style='font-size:10px;'> 10 TL</i>
+        <i class="fas fa-cookie-bite"  style='font-size:12px; color:lightblue;'> 10 TL</i>
+        <i class="fas fa-cookie-bite" style='font-size:14px;color:red;'> 10 TL</i>
+      </div>  
+    </div>  
+
+    <div class="card uruncerceve">
+      <img class="card-img-top" src="images/gzlk.jpg" style="width:100%">
+      <div class="card-body">
+       <h5 class="card-title">GLASS</h5>
+       <hr>
+        <i class="fas fa-cheese" style='font-size:10px;'> 10 TL</i>
+      <i class="fas fa-cookiw-bite"  style='font-size:12px; color:lightblue;'> 10 TL</i>
+      <i class="fas fa-cheese" style='font-size:14px;color:red;'> 10 TL</i>
+      </div>  
+    </div>  
+
+    </div>
+   </div>
+    <div id="menu2" class="container tab-pane"> <!-- MENÜ2 BAŞLANGıç-->
+     ,
+     <div class="card" style="width:200px; height:200px; margin-left:15px; ">
+      <img class="card-img-top" src="images/gzlk.jpg" style="width:100%">
+      <div class="card-body">
+       <h5 class="card-title">GLASS</h5>
+       <hr>
+        <i class="fas fa-cheese" style='font-size:10px;'> 10 TL</i>
+      <i class="fas fa-cookiw-bite"  style='font-size:12px; color:lightblue;'> 10 TL</i>
+      <i class="fas fa-cheese" style='font-size:14px;color:red;'> 10 TL</i>
+      </div>  
+    </div>  
+
+   </div>
+  </div>
+ </div><!-- MENÜ son-->
+
+<div id="sube" class="container  tabcontent" > <!-- SUBE BAŞLANGıç-->
+ <h6 class="display-4 mb-3 ml-3">Şubler</h6>
+ <button class="collapsible ">Starbucks Bebek</button>
+  <div class="content">
+   <div class="row">
+   <div class="col-sm-4">
+   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24084.128172599827!2d28.876044359723416!3d41.013965175195395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cabb081d9317d1%3A0xba800c81534b7bfc!2sHakan+Tekstil!5e0!3m2!1str!2str!4v1545233030472" frameborder="0" style="width:90%;"></iframe>
+    <br>
+    <button type="button" class="btn btn-warning" style="width:90%">Yol Tarifi</button>
+   </div>
+   <div class="col-sm-2">
+    <b>Adres</b>
+    <p>Bebek Mahallesi, Cevdetpaşa Caddesi, No 30/A, Beşiktaş, İstanbul</p>
+    <b>Telefon</b>
+    <p>0212 2874363</p>
+   </div>
+
+    <div class="col-sm-2">
+    <b>Çalışma Saatleri</b>
+    <br>07:00 - 01:00 <i id="drm" style="font-size: 10px; cursor: pointer;"></i> 
+    <br>
+    <div class="tooltip1"><p class="dhfzl">Daha Fazla</p><span class="tooltiptext1">Pts  07:00 - 01:00 <br> Sa  07:00 - 01:00 <br> Çrş 07:00 - 01:00 <br> Prş 07:00 - 01:00 <br> Cum 07:00 - 01:00 <br>Cts 07:00 - 01:00 <br> Paz 07:00 -01:00</span>
+    </div>
+   </div>
+
+   <div class="col-sm-4">
+    <b style="font-size: 15px;">Daha fazla bilgi</b>
+    <div class="row">
+    <p><i class="fas fa-check" style="color: green; font-size: 15px;"></i> Kahvaltı <br>
+    <i class="fas fa-times" style="color: red; font-size: 15px;"></i> Alkol Bulunmaz  <br>
+    <i class="fas fa-check" style="color: green; font-size: 15px;"></i> Boğaz Manzarası <br>
+    <i class="fas fa-check" style="color: green; font-size: 15px;"> </i> Wifi<br>
+    <i class="fas fa-check" style="color: green; font-size: 15px;"> </i> Dış Mekan<br>
+    <i class="fas fa-check" style="color: green; font-size: 15px;"> </i> İç Mekan<br></p>
+    <p> <i class="fas fa-check" style="color: green; font-size: 15px;"> </i> Self Servis <br>
+    <i class="fas fa-check" style="color: green; font-size: 15px;"> </i> Sigara İçme Alanı<br>
+    <i class="fas fa-check" style="color: green; font-size: 15px;"> </i> Deniz Kenarı<br>
+    <i class="fas fa-check" style="color: green;  font-size: 15px;"> </i> Çocuklar için Uygun<br></p>
+   </div>
+   </div>
+
+   </div>
+  </div>   
+</div>
+
+<div id="kendinyap" class="container tabcontent "> <!-- ---------------------------------------------- KENDİN YAP -->
+
+<center> <h1 class="mb-4" style="border-bottom: 3px solid #feac00; width: 300px;" >Kendin yap</h1> </center> 
+ 
+<div class="tab" >  <!--------------------------     Kahve Baz Seçimi --> 
+  <h3 class="mb-4 mt-4"><b>Kahve Bazı </b></h3>
+<img src="caffee.jpg" class="img-kndyp">
+<img src="caffee.jpg" class="img-kndyp" >
+<img src="caffee.jpg" class="img-kndyp" > 
+<img src="caffee.jpg" class="img-kndyp" > 
+<img src="caffee.jpg" class="img-kndyp" >
+</div>
+
+<div class="tab"  >  <!--------------------------     Kahve Seçimi --> 
+  <h3 class="mb-4 mt-4"><b>Kahveler</b></h3>
+  
+<img src="caffee.jpg" class="img-kndyp-khv" >
+<img src="caffee.jpg" class="img-kndyp-khv" >
+<img src="caffee.jpg" class="img-kndyp-khv" > 
+<img src="caffee.jpg" class="img-kndyp-khv" > 
+<img src="caffee.jpg" class="img-kndyp-khv" >
+<img src="caffee.jpg" class="img-kndyp-khv" >
+<img src="caffee.jpg" class="img-kndyp-khv" >
+<img src="caffee.jpg" class="img-kndyp-khv" > 
+<img src="caffee.jpg" class="img-kndyp-khv" > 
+<img src="caffee.jpg" class="img-kndyp-khv" >
+<img src="caffee.jpg" class="img-kndyp-khv" >
+<img src="caffee.jpg" class="img-kndyp-khv" >
+<img src="caffee.jpg" class="img-kndyp-khv" > 
+<img src="caffee.jpg" class="img-kndyp-khv" > 
+</div>
+
+<div class="tab"><!--------------------------     Boy Seçimi -->
+<h3 class="mb-4 mt-4"><b>İçecek Boyu</b></h3>
+<label class="container2 " >Tall
+  <input type="radio" checked="checked" name="radio">
+  <span class="checkmark"></span>
+</label>
+<label class="container2 ">Grande
+  <input type="radio" name="radio">
+  <span class="checkmark"></span>
+</label>
+<label class="container2 ">Venti
+  <input type="radio" name="radio">
+  <span class="checkmark"></span>
+</label>
+</div>
+
+
+  <div class="tab" ><!--------------------------     Şurup Seçimi -->
+  <h3 class="mb-4 mt-4"><b>Extra Şurup</b></h3>
+
+  <label class="container1">Fındık
+  <input type="checkbox" >
+  <span class="checkmark1"></span>
+ </label>
+<label class="container1"> Fındık (Şekersiz)
+  <input type="checkbox">
+  <span class="checkmark1"></span>
+</label>
+<label class="container1">Karamel
+  <input type="checkbox">
+  <span class="checkmark1"></span>
+</label>
+<label class="container1"> Karamel (Şekersiz)
+  <input type="checkbox">
+  <span class="checkmark1"></span>
+</label>
+
+<label class="container1">Vanilya
+  <input type="checkbox">
+  <span class="checkmark1"></span>
+</label>
+<label class="container1"> Vanilya (Şekersiz)
+  <input type="checkbox">
+  <span class="checkmark1"></span>
+</label>
+  </div>
+<div class="tab" ><!--------------------------    Süt Seçimi -->
+<h3 class="mb-4 mt-4"><b>Süt</b></h3>
+<label class="container2 " >Normal Süt
+  <input type="radio" checked="checked" name="radio">
+  <span class="checkmark"></span>
+</label>
+<label class="container2 ">Laktozsuz Sütü
+  <input type="radio" name="radio">
+  <span class="checkmark"></span>
+</label>
+<label class="container2 ">Light Sütü
+  <input type="radio" name="radio">
+  <span class="checkmark"></span>
+</label>
+<label class="container2 ">Badem Sütü <span class="fyt-rnk">+2.75 TL</span>
+  <input type="radio" name="radio">
+  <span class="checkmark"></span>
+</label>
+<label class="container2 ">Soya Sütü <span class="fyt-rnk">+2.75 TL</span>
+  <input type="radio" name="radio">
+  <span class="checkmark"></span>
+</label>
+</div>
+
+<div class="tab" ><!--------------------------     Extra Ecspresso Seçimi -->
+  <h3 class="mb-4 mt-4"><b>Extra Şurup</b></h3>
+
+  <label class="container1">Extra Ecspresso <span class="fyt-rnk">+2.75 TL</span>
+  <input type="checkbox" >
+  <span class="checkmark1"></span>
+ </label>
+<label class="container1">Blonde Roast <span class="fyt-rnk">+1.50 TL</span>
+  <input type="checkbox">
+  <span class="checkmark1"></span>
+</label>
+<label class="container1">Chritmas Blend <span class="fyt-rnk">+1.50 TL</span>
+  <input type="checkbox">
+  <span class="checkmark1"></span>
+</label>
+  </div>
+
+<div class="tab"><!--------------------------  Kafein Seçimi -->
+<h3 class="mb-4 mt-4"><b>Kafein</b></h3>
+<label class="container2 " >Kafeinli
+  <input type="radio" checked="checked" name="radio">
+  <span class="checkmark"></span>
+</label>
+<label class="container2 ">Kafeinsiz
+  <input type="radio" name="radio">
+  <span class="checkmark"></span>
+</label>
+
+</label>
+</div>
+<div class="tab"><!-------------------------- Hafif İçim  Seçimi -->
+<h3 class="mb-4 mt-4"><b>Kafein</b></h3>
+<label class="container2 " >Hafifi içim istemiyorum
+  <input type="radio" checked="checked" name="radio">
+  <span class="checkmark"></span>
+</label>
+<label class="container2 ">Hafifi içim <span class="fyt-rnk">+2.75 TL</span>
+  <input type="radio" name="radio">
+  <span class="checkmark"></span>
+</label>
+
+</label>
+</div>
+
+
+  <div style="overflow:auto;">
+    <div style="float:right;">
+      <button class="button-kndyp" type="button" id="prevBtn" onclick="nextPrev(-1)">Geri</button>
+      <button class="button-kndyp" type="button" id="nextBtn" onclick="nextPrev(1)">İleri</button>
+    </div>
+  </div>
+ 
+  <div style="text-align:center;margin-top:40px;">
+    <span class="step"></span>
+    <span class="step"></span>
+    <span class="step"></span>
+    <span class="step"></span>
+     <span class="step"></span>
+    <span class="step"></span>
+     <span class="step"></span>
+    <span class="step"></span>
+  </div>
+</div>
+
+<div id="foto" class="container  tabcontent"><!--------------------------------------------------------- GALERİ -->
+ <h6 class="display-4 mb-4 ml-3">Fotoğraf</h6>
+
+  <ul class="nav nav-pills  justify-content-center mb-4 ml-3 mt-2 " role="tablist">
+    <li class="nav-item">
+      <a class="nav-link active" data-toggle="pill" onclick="filterSelection('glrall')" href="#glrall">Tümü</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="pill"onclick="filterSelection('glrmkn')" href="#glrmkn">Ambiyans</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="pill" onclick="filterSelection('glrymk')" href="#glrymk">Yemek</a>
+    </li>
+  </ul>
+ <div class="tab-content">
+    <div id="glrall" class="container tab-pane active"><br>
+     <div class="rowimg">
+  <div class="columnimg">
+    <img src="images/img_nature.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadowimg cursorimg">
+  </div>
+  <div class="columnimg">
+    <img src="images/img_snow.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadowimg cursorimg">
+  </div>
+  <div class="columnimg">
+    <img src="images/img_mountains.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadowimg cursorimg">
+  </div>
+  <div class="columnimg">
+    <img src="images/img_lights.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadowimg cursorimg">
+  </div>
+   <div class="columnimg">
+    <img src="images/img_nature.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadowimg cursorimg">
+  </div>
+  <div class="columnimg">
+    <img src="images/img_snow.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadowimg cursorimg">
+  </div>
+  <div class="columnimg">
+    <img src="images/img_mountains.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadowimg cursorimg">
+  </div>
+  <div class="columnimg">
+    <img src="images/img_lights.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadowimg cursorimg">
+  </div>
+</div>
+    </div>
+ <div id="glrmkn" class="container tab-pane fade"><br>
+   <div class="rowimg">
+    <div class="columnimg">
+    <img src="images/img_nature.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadowimg cursorimg">
+    </div>
+    <div class="columnimg">
+    <img src="images/img_snow.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadowimg cursorimg">
+    </div>
+    <div class="columnimg">
+    <img src="images/img_mountains.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadowimg cursorimg">
+    </div>
+    <div class="columnimg">
+    <img src="images/img_lights.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadowimg cursorimg">
+    </div>
+   </div>
+  </div>
+
+ <div id="glrymk" class="container tab-pane fade"><br>
+   <div class="rowimg">
+    <div class="columnimg">
+    <img src="images/img_nature.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadowimg cursorimg">
+    </div>
+    <div class="columnimg">
+    <img src="images/img_snow.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadowimg cursorimg">
+    </div>
+   </div>    
+   </div>
+  </div>
+
+
+<div id="myModal" class="modalimg">
+  <span class="closeimg cursorimg" onclick="closeModal()">&times;</span>
+  <div class="modal-contentimg">
+    
+    <div class="mySlidesimg">
+      <img src="images/img_nature.jpg" class="imgbytimg" >
+    </div>
+    <div class="mySlidesimg">
+      <img src="images/img_snow.jpg" class="imgbytimg" >
+    </div>
+    <div class="mySlidesimg">
+      <img src="images/img_mountains.jpg" class="imgbytimg" >
+    </div>  
+    <div class="mySlidesimg">
+    <img src="images/img_lights.jpg" class="imgbytimg" >
+    </div>
+     <div class="mySlidesimg">
+      <img src="images/img_nature.jpg" class="imgbytimg" >
+    </div>
+
+    <div class="mySlidesimg">
+      <img src="images/img_snow.jpg" class="imgbytimg" >
+    </div>
+
+    <div class="mySlidesimg">
+      <img src="images/img_mountains.jpg" class="imgbytimg" >
+    </div>  
+    <div class="mySlidesimg">
+    <img src="images/img_lights.jpg" class="imgbytimg" >
+    </div>
+    <a class="previmg" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="nextimg" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="caption-containerimg">
+      <p id="caption"></p>
+    </div>
+
+
+    <div class="columnimg1 gizle ">
+      <img class="demoimg cursorimg" src="images/img_nature.jpg" style="width:100%" onclick="currentSlide(1) " alt="Nature and sunrise">
+    </div>
+    <div class="columnimg1 gizle ">
+      <img class="demoimg cursorimg" src="images/img_snow.jpg" style="width:100%" onclick="currentSlide(2)" alt="Snow">
+    </div>
+  <div class="columnimg1 gizle">
+   <img class="demoimg cursorimg" src="images/img_mountains.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+  </div>
+    <div class="columnimg1 gizle">
+      <img class="demoimg cursorimg" src="images/img_lights.jpg" style="width:100%" onclick="currentSlide(4) " alt="Northern Lights">
+    </div>
+    </div>
+</div>
+</div>
+</div>
+</div>
+<script type="text/javascript">
+/* ------------------------------------- Kendin Yap  -------------------------------------  */
+var currentTab = 0; // Current tab is set to be the first tab (0)
+showTab(currentTab); // Display the current tab
+
+function showTab(n) {
+  // This function will display the specified tab of the form...
+  var x = document.getElementsByClassName("tab");
+  x[n].style.display = "block";
+  //... and fix the Previous/Next buttons:
+  if (n == 0) {
+    document.getElementById("prevBtn").style.display = "none";
+  } else {
+    document.getElementById("prevBtn").style.display = "inline";
+  }
+  if (n == (x.length - 1)) {
+    document.getElementById("nextBtn").innerHTML = "Submit";
+  } else {
+    document.getElementById("nextBtn").innerHTML = "Next";
+  }
+  //... and run a function that will display the correct step indicator:
+  fixStepIndicator(n)
+}
+
+function nextPrev(n) {
+  // This function will figure out which tab to display
+  var x = document.getElementsByClassName("tab");
+  // Exit the function if any field in the current tab is invalid:
+  if (n == 1 && !validateForm()) return false
+  // Hide the current tab:
+  x[currentTab].style.display = "none";
+  // Increase or decrease the current tab by 1:
+  currentTab = currentTab + n;
+  // if you have reached the end of the form...
+  if (currentTab >= x.length) {
+    // ... the form gets submitted:
+    document.getElementById("regForm").submit();
+    return false;
+  }
+  // Otherwise, display the correct tab:
+  showTab(currentTab);
+}
+
+function validateForm() {
+  // This function deals with validation of the form fields
+  var x, y, i, valid = true;
+  x = document.getElementsByClassName("tab");
+  y = x[currentTab].getElementsByTagName("input");
+  // A loop that checks every input field in the current tab:
+  for (i = 0; i < y.length; i++) {
+    // If a field is empty...
+    if (y[i].value == "") {
+      // add an "invalid" class to the field:
+      y[i].className += " invalid";
+      // and set the current valid status to false
+      valid = false;
+    }
+  }
+  // If the valid status is true, mark the step as finished and valid:
+  if (valid) {
+    document.getElementsByClassName("step")[currentTab].className += " finish";
+  }
+  return valid; // return the valid status
+}
+
+function fixStepIndicator(n) {
+  // This function removes the "active" class of all steps...
+  var i, x = document.getElementsByClassName("step");
+  for (i = 0; i < x.length; i++) {
+    x[i].className = x[i].className.replace(" active", "");
+  }
+  //... and adds the "active" class on the current step:
+  x[n].className += " active";
+}
+
+
+
+/* -------------------- ŞUBELER ------------------------------- */
+var coll = document.getElementsByClassName("collapsible");
+var i;
+var time=new Date().getHours();
+var durum;
+for (i = 0; i < coll.length; i++) 
+{
+  coll[i].addEventListener("click", 
+   function()
+   {
+    this.classList.toggle("act");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight)
+    {
+      content.style.maxHeight = null;
+    } 
+    else 
+    {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
+
+if (time >7 &&  time <24)
+{
+ durum = "Şuan Açık";
+ document.getElementById('drm').style.color='green';
+}
+else
+{
+ durum = "Şuan Kapalı ";
+ document.getElementById('drm').style.color='red'
+}
+ document.getElementById("drm").innerHTML =durum;
+ 
+document.getElementById("defaultOpen").click();
+
+/* GALERİ */
+function openModal() {
+  document.getElementById("myModal").style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById("myModal").style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlidesimg");
+  var dots = document.getElementsByClassName("demoimg");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" activeimg", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " activeimg";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+<br><br><br>
+
+   <footer class="py-lg-4 py-4">
+
+        <div class="container py-sm-1">
+
+            <div class="row footer-grids">
+
+                <div class="col-lg-4 mt-1">
+                    <h4 class="mb-1">Hızlı Link</h4>
+                    <div class="links-wthree d-flex">                     
+                        <ul class="list-info-wthree ml-2">
+                            <li> <a href="index.html"><span class="fa fa-angle-double-right" aria-hidden="true"></span>
+                            Anasayfa </a> </li>
+                            <li><a href="about.html"><span class="fa fa-angle-double-right" aria-hidden="true"></span>
+                             Mekanlar </a> </li>
+                            <li><a href="contact.html"><span class="fa fa-angle-double-right" aria-hidden="true"></span>
+                            İletişim </a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 mt-4 ad-info">
+                  <h3> <a class="navbar-brand px-0 mx-0 mb-4" href="index.html">Sosyal Medya </a> </h3>          
+                     <div class="icon-social  mt-4b">
+                        <a href="#" class="button-footr social-icon-color">
+                            <span class="fa mx-2 fa-facebook "></span>
+                        </a>
+                        <a href="#" class="button-footr social-icon-color">
+                            <span class="fa mx-2 fa-twitter"></span>
+                        </a>
+                        <a href="#" class="button-footr social-icon-color">
+                            <span class="fa mx-2 fa-instagram"></span>
+                        </a>           
+                    </div>
+               </div>
+
+                     <div class="col-lg-4 mt-3">
+                    <h2> <a class="navbar-brand px-0 mx-0 mb-4" href="index.html">Mekanla </a> </h2>
+                    <p class="mb-3">Merak etiğiniz mekanlar hakkında fiyat ve bilgiye ulaşmanın en kolay yolu. </p>
+                
+                </div>
+
+        </div>
+    </footer>
+
+    <div class="copy_right p-1 d-flex">
+        <div class="container">
+            <div class="row d-flex">
+                <div class="col-lg-9 copy_w3pvt">
+                    <p class="text-lg-left text-center">© 2019 Mekanla. Tüm hakları saklıdır </p>
+                       
+                </div>
+
+                <div class="col-lg-3 move-top text-lg-right text-center">
+                    <a href="#home" class="move-top ">
+                        <span class="fa fa-angle-double-up mt-1   pr-2 pt-1 bg-warning rounded-circle " style="font-size: 30px;"  aria-hidden="true"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
